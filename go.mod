@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/syamilAbdillah/minio-go/v1
 
 go 1.22
 
