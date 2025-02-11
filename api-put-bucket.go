@@ -50,15 +50,16 @@ func (c *Client) doMakeBucket(ctx context.Context, bucketName, location string, 
 		}
 	}()
 
-	// If location is empty, treat is a default region 'us-east-1'.
-	if location == "" {
-		location = "us-east-1"
-		// For custom region clients, default
-		// to custom region instead not 'us-east-1'.
-		if c.region != "" {
-			location = c.region
-		}
-	}
+	// THIS SHIT IS SOURCE OF BUG, so i comment it
+	// ref: https://www.linode.com/community/questions/21321/problems-creating-object-storage-buckets-using-aws-sdk
+	// if location == "" {
+	// 	location = "us-east-1"
+	// 	// For custom region clients, default
+	// 	// to custom region instead not 'us-east-1'.
+	// 	if c.region != "" {
+	// 		location = c.region
+	// 	}
+	// }
 	// PUT bucket request metadata.
 	reqMetadata := requestMetadata{
 		bucketName:     bucketName,
