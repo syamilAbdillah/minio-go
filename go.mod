@@ -1,4 +1,4 @@
-module github.com/syamilAbdillah/minio-go/v1
+module github.com/syamilAbdillah/minio-go
 
 go 1.22
 

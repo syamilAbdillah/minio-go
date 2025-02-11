@@ -25,8 +25,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/encrypt"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/syamilAbdillah/minio-go/pkg/encrypt"
+	"github.com/syamilAbdillah/minio-go/pkg/tags"
 )
 
 // expirationDateFormat date format for expiration key in json policy.

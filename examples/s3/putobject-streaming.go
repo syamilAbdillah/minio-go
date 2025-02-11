@@ -25,8 +25,8 @@ import (
 	"log"
 	"os"
 
-	minio "github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/syamilAbdillah/minio-go/pkg/credentials"
+	minio "github.com/syamilAbdillah/minio-go/v7"
 )
 
 func main() {
